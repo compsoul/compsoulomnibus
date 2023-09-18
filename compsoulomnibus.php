@@ -524,7 +524,7 @@ class Compsoulomnibus extends Module
     {
         $interval = $this->getDaysSinceDate($date);
 
-        return ($interval < $days || $date == 0);
+        return ($interval < $days || (int) $date === 0);
     }
 
     protected function getDaysSinceDate($date) 
